@@ -1,16 +1,14 @@
-export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
-};
+import { GlobalStyle } from './GlobalStyle';
+import React, { Component } from 'react';
+import { Phonebook } from './Phonebook/Phonebook';
+
+export class App extends Component {
+  render() {
+    return (
+      <>
+        <Phonebook />
+        <GlobalStyle />
+      </>
+    );
+  }
+}
