@@ -52,7 +52,6 @@ const initialValues = {
 
 export const ContactForm = ({ contacts, onAddContact }) => {
   const handleSubmit = (values, { resetForm }) => {
-    console.log(values);
     const name = values.name;
     const number = values.number;
     const id = nanoid();
